@@ -12,7 +12,7 @@ func main() {
 		fmt.Println("The store is open, let's buy some clothes!")
 	}
 
-	storeIsOpen
+	storeIsOpen = false
 	if !storeIsOpen {
 		fmt.Println("Oh no, let's buy some clothes online!")
 	}
