@@ -1,7 +1,6 @@
 // structs3
 // Make me compile!
-//
-// I AM NOT DONE
+
 package main
 
 import "fmt"
@@ -9,6 +8,10 @@ import "fmt"
 type Person struct {
 	firstName string
 	lastName  string
+}
+
+func (p *Person) FullName() string {
+	return fmt.Sprintf("%s %s", p.firstName, p.lastName)
 }
 
 func main() {

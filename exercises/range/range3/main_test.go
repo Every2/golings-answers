@@ -1,7 +1,6 @@
 // range3
 // Make me compile!
-//
-// I AM NOT DONE
+
 package main_test
 
 import (
@@ -14,7 +13,10 @@ func TestFilterEvenNumbers(t *testing.T) {
 
 	evenNumbers := []int{} // use range to filter even numbers
 
-	for range numbers {
+	for _, v := range numbers {
+		if v%2 == 0 {
+			evenNumbers = append(evenNumbers, v)			
+		}
 	}
 
 	if !reflect.DeepEqual(evenNumbers, []int{2, 4, 6, 8, 10}) {
