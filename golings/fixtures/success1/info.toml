@@ -1,5 +1,0 @@
-[[exercises]]
-name = "success1"
-path = "../fixtures/success1/main.go"
-mode = "compile"
-hint = ""
